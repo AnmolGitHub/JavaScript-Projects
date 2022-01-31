@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+4&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Source Serif 4', sans-serif;
+    background-color: hsl(210, 36%, 96%);
+}
+
+main{
+    place-items: center;
+    display: grid;
+    min-height: calc(100vh - 3rem);
+}
+
+.container{
+    text-align: center; 
+}
+
+.container h2{
+    padding: 1rem 2rem;
+}
+
+nav{
+    background-color: white;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    display: grid;
+    align-items: center;
+    height: 3rem;
+    width: auto;
+}
+
+h2,h3,h4 {
+    letter-spacing: 0.1rem;
+}
+
+h2{
+    display: block;
+    background-color: black;
+    color: burlywood;
+    padding: 1px;
+    margin-bottom: 40px;
+    border-radius: 4px;
+    font-size: 1.75rem;
+}
+
+h4 {
+    margin: 11px 20px;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: background-image .25s ease-in-out;
+}
+
+.nav-center {
+    display: flex;
+    justify-content: space-between;
+    
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+}
+
+li{
+    display: list-item;
+    text-align: right;
+    padding: 9px 15px; 
+    font-size: 1rem;
+    letter-spacing: 0.1rem;
+}
+
+.btn-hero{
+    appearance: auto;
+    font-size: 20px;
+    background-color: transparent;
+    color: black;
+    font-weight: bolder;
+    padding: 10px 10px;
+    border: 2px solid black;
+}
+
+button{
+    color: black;
+    border-radius: 4px;
+}
+
+.btn-hero:hover{
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+}
+
+.btn-hero:active {
+    background-color: #333533;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+nav a{
+    text-transform: capitalize;
+    padding-right: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: darkcyan;
+}
+
+nav a:hover{
+    color: purple;
+    font-weight: bolder;
+}
+
+nav a:active{
+    background-color: red;
+    border-radius: 5px;
+    padding: 0.5em 0.5em;
+}
